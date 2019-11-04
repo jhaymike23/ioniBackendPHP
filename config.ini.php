@@ -1,7 +1,7 @@
 <?php  
-      $host = "192.168.10.10";
-      $username = "homestead";
-      $password = "secret";
+      $host = "localhost";
+      $username = "root";
+      $password = "";
       $DBname = "appdata";
      
       $con = mysqli_connect($host,$username,$password,$DBname);

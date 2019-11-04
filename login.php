@@ -1,8 +1,11 @@
 <?php  
   header("Access-Control-Allow-Origin: *");
-  header("Content-Type: application/json; charset=UTF-8");
-  header("Access-Control-Allow-Methods: GET");
+  header("Content-Type: application/json; application/x-www-form-urlencoded; charset=UTF-8");
 
+  header("Access-Control-Allow-Credentials:true");
+  header("Access-Control-Allow-Headers:Access-Control-Allow-Headers, Authorization, Content-type, Accept, Origin, X-Requested-With");
+  header("Access-Control-Allow-Methods:GET, POST, OPTIONS");
+  
   include('config.ini.php');
 
 
@@ -12,7 +15,7 @@
   $user =   $getdata->user; 
   $pass = $getdata->pass;
 
-  // should crete something like this
+  
   $data = new stdClass();
   $data->status = 0;
   $data->data = null;
